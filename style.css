@@ -1,5 +1,25 @@
-.test {
-  height: 200px;
-  width: 300px;
-  background-color: red;
+:root {
+  font-size: 10px;
+}
+
+:root {
+  --fz-large: 1.8rem;
+  --ff-main: 'Roboto', sans-serif;
+
+}
+
+/* Typographic */
+
+body {
+  font-size: 1.6rem;
+}
+
+.info {
+  font-family: var(--ff-main);
+  font-size: var(--fz-large);
+  font-weight: 700;
+}
+
+label {
+  text-transform: uppercase;
 }
