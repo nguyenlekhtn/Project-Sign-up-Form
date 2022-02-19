@@ -8,3 +8,4 @@ The requirements are from [TheOdinProject](https://www.theodinproject.com/paths/
 + Create a form and style it
 + Make a background image that fits well in its container
 + Apply various styles to input by using class
++ Use a downloaded font and online fonts for styling
