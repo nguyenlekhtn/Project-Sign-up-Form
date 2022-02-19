@@ -18,9 +18,12 @@
 :root {
   --fz-large: 1.92rem;
   --ff-main: 'Source Sans Pro', sans-serif;
-  --pd-main: 32px;
+  --pd-main: 36px;
   --clr-accent: #245f0b;
-
+  --clr-accent-dark: #133106;
+  --fz-logo: 9.6rem;
+  --h-logo: calc(var(--fz-logo) * 1.2);
+  --height-top-main: 300px;
 }
 
 body {
@@ -47,7 +50,10 @@ body {
 }
 
 .logo {
-  margin-top: 200px;
+  --pd: 5px;
+
+
+  margin-top: calc(var(--height-top-main) - var(--h-logo) - var(--pd) * 2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +66,7 @@ body {
 }
 
 .logo-img {
-  height: 1.2em;
+  height: var(--h-logo)
 }
 
 .credit {
@@ -87,7 +93,7 @@ body {
 }
 
 .top__main {
-  height: 300px;
+  height: var(--height-top-main);
   background-color: #f2fff2;
   padding-bottom: 3em;
 
@@ -176,7 +182,12 @@ body {
   margin-top: 36px;
 }
 
-.login_text > span {
+.login_text > a {
   font-weight: 700;
   color: var(--clr-accent);
+  text-decoration: none;
+}
+
+.login_text > a:hover {
+  color: var(--clr-accent-dark)
 }
